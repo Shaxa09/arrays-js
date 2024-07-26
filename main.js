@@ -33,18 +33,41 @@
 
 
 
-    const arr = ['Feruz', 22, true, null];
-    let str = [];
-    let num = [];
-    let bool = [];
-    let obj = [];
-    
-    str = arr.filter(element => typeof element === 'string');
-    num = arr.filter(element => typeof element === 'number');
-    bool = arr.filter(element => typeof element === 'boolean');
-    obj = arr.filter(element => typeof element === 'object');
-    
-    console.log(str);
-    console.log(num);
-    console.log(bool);
-    console.log(obj);
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// let evens = []
+// let odds = []
+
+// nums.filter((number) => {
+//     if (number % 2 === 0) {
+//         evens.push(number)
+//     } else {
+//         odds.push(number)
+//     }
+// })
+
+// console.log(
+//     {
+//        evens,
+//        odds 
+//     }
+// );
+
+// let shuffled = [2, 5, 1, 3, 4, 6, 99, 7, 8, 0, 9, 44, 66, 24, 67]
+
+// console.log(
+//     shuffled.sort((a, b) => b - a).pop(),
+//     shuffled.sort((a, b) => a - b).pop()
+// );
+
+let shuffled = [1, 2, 3, 4];
+
+let total = 0;
+shuffled.forEach(num => {
+  total += num;
+});
+
+let average = total / shuffled.length;
+
+console.log("Total:", total);
+console.log("Average:", average);
