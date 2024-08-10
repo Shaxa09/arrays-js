@@ -379,44 +379,44 @@
     // console.log(emails, other); 
 //====================================================
 
-const products = [
-    {
-        name: "moloko",
-        price: 12000,
-        type: "milk"
-    },
-    {
-        name: "cheese",
-        price: 67000,
-        type: "milk"
-    },
-    {
-        name: "banana",
-        price: 25000,
-        type: "fruit"
-    },
-    {
-        name: "apple",
-        price: 8000,
-        type: "fruit"
-    },
-    {
-        name: "vodka",
-        price: 32000,
-        type: "alcohole"
-    },
-    {
-        name: "beer",
-        price: 12000,
-        type: "alcohole"
-    },
-]
+// const products = [
+//     {
+//         name: "moloko",
+//         price: 12000,
+//         type: "milk"
+//     },
+//     {
+//         name: "cheese",
+//         price: 67000,
+//         type: "milk"
+//     },
+//     {
+//         name: "banana",
+//         price: 25000,
+//         type: "fruit"
+//     },
+//     {
+//         name: "apple",
+//         price: 8000,
+//         type: "fruit"
+//     },
+//     {
+//         name: "vodka",
+//         price: 32000,
+//         type: "alcohole"
+//     },
+//     {
+//         name: "beer",
+//         price: 12000,
+//         type: "alcohole"
+//     },
+// ]
 
-let typesOfFood = {
-    alcohole: 0,
-    fruit: 0,
-    milk    : 0,
-}
+// let typesOfFood = {
+//     alcohole: 0,
+//     fruit: 0,
+//     milk    : 0,
+// }
 //===============FOR OF==================================
 // for (const product of products) {
 //     typesOfFood[product.type]++;
@@ -432,14 +432,161 @@ let typesOfFood = {
 //=======================H/W==============================
 
 //=======================FOR OF===========================
-for (const product of products) {
-    typesOfFood[product.type] += product.price;
-}
+// for (const product of products) {
+//     typesOfFood[product.type] += product.price;
+// }
 
-console.log(typesOfFood);
+// console.log(typesOfFood);
 //=======================FOR==============================
-for (let i = 0; i < products.length; i++) {
-    typesOfFood[products[i].type] += products[i].price;
+// for (let i = 0; i < products.length; i++) {
+//     typesOfFood[products[i].type] += products[i].price;
+// }
+
+// console.log(typesOfFood);x
+// const companies = [
+//     { name: "Apple", income: [300000, 25000, 100000], spend: [51000, 3000, 11000] },
+//     { name: "Microsoft", income: [100000, 25000, 100000], spend: [20000, 9000, 12000] },
+//     { name: "Google", income: [45000, 25000, 100000], spend: [23000, 5000, 19000] },
+//     { name: "SpaceX", income: [3000, 7500, 20000], spend: [35000, 5000, 11000] },
+//     { name: "GM motors", income: [300000, 25000, 100000], spend: [2000, 50000, 19000] },
+//   ];
+  
+// for(let item of companies) {
+//     item.totalSpend = 0
+
+//     for(let price of item.spend) {
+//         item.totalSpend += price
+//     }
+
+//     console.log(item);
+    
+// }
+//=============================================H/W==========================
+let arr = [
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
+    },
+]
+
+let categories = [
+    {
+        course: ' SMM',
+        count: 0
+    },
+    {
+        course: 'PROGRAMMING',
+        count: 0
+    },
+    {
+        course: '     3DSMAX',
+        count: 0
+    },
+    {
+        course: ' DIZAYN',
+        count: 0
+    },
+    {       
+        course: '   BACKEND',
+        count: 0
+    },
+]
+
+for (let i = 0; i < arr.length; i++) {
+    let studentCourse = arr[i].info.faculity.trim().toUpperCase(); 
+    for (let j = 0; j < categories.length; j++) {
+        let categoryCourse = categories[j].course.trim().toUpperCase();
+        
+        if (studentCourse === categoryCourse) {
+            categories[j].count++;
+        }
+    }
 }
 
-console.log(typesOfFood);
+console.log(categories);
+
+    
