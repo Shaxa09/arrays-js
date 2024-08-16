@@ -462,131 +462,287 @@
     
 // }
 //=============================================H/W==========================
-let arr = [
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-]
+// let arr = [
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Timur',
+//         info: {
+//             school: '235',
+//             faculity: 'SMM'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Imran',
+//         info: {
+//             school: 'ne izvestno',
+//             faculity: 'programming'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Aminjon',
+//         info: {
+//             school: '444',
+//             faculity: 'Dizayn'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Maxmud',
+//         info: {
+//             school: '777',
+//             faculity: '3dsmax'
+//         },
+//     },
+//     {
+//         id: Math.random(),
+//         name: 'Muxammad',
+//         info: {
+//             school: '5555',
+//             faculity: 'Backend'
+//         },
+//     },
+// ]
 
-let categories = [
-    {
-        course: ' SMM',
-        count: 0
-    },
-    {
-        course: 'PROGRAMMING',
-        count: 0
-    },
-    {
-        course: '     3DSMAX',
-        count: 0
-    },
-    {
-        course: ' DIZAYN',
-        count: 0
-    },
-    {       
-        course: '   BACKEND',
-        count: 0
-    },
-]
+// let categories = [
+//     {
+//         course: ' SMM',
+//         count: 0
+//     },
+//     {
+//         course: 'PROGRAMMING',
+//         count: 0
+//     },
+//     {
+//         course: '     3DSMAX',
+//         count: 0
+//     },
+//     {
+//         course: ' DIZAYN',
+//         count: 0
+//     },
+//     {       
+//         course: '   BACKEND',
+//         count: 0
+//     },
+// ]
 
-for (let i = 0; i < arr.length; i++) {
-    let studentCourse = arr[i].info.faculity.trim().toUpperCase(); 
-    for (let j = 0; j < categories.length; j++) {
-        let categoryCourse = categories[j].course.trim().toUpperCase();
+// for (let i = 0; i < arr.length; i++) {
+//     let studentCourse = arr[i].info.faculity.trim().toUpperCase(); 
+//     for (let j = 0; j < categories.length; j++) {
+//         let categoryCourse = categories[j].course.trim().toUpperCase();
         
-        if (studentCourse === categoryCourse) {
-            categories[j].count++;
-        }
-    }
-}
+//         if (studentCourse === categoryCourse) {
+//             categories[j].count++;
+//         }
+//     }
+// }
 
-console.log(categories);
+// console.log(categories);
+//=========================================================================================
+// let hotel = [
+//     [
+//         {
+//             type: "base",
+//             price: 240000,
+//             breakfast: false,
+//             beds: [2,1,1],
+//             number: 203
+//         },
+//         {
+//             type: "base",
+//             price: 240000,
+//             breakfast: false,
+//             beds: [2,1,1],
+//             number: 204
+//         },
+//         {
+//             type: "base",
+//             price: 200000,
+//             breakfast: false,
+//             beds: [2],
+//             number: 205
+//         }
+//     ],
+//     [
+//         {
+//             type: "lux",
+//             price: 450000,
+//             breakfast: true,
+//             beds: [1,1],
+//             number: 301
+//         },
+//         {
+//             type: "lux",
+//             price: 480000,
+//             breakfast: true,
+//             beds: [2,1],
+//             number: 302
+//         },
+//         {
+//             type: "lux",
+//             price: 520000,
+//             breakfast: true,
+//             beds: [2,1,1],
+//             number: 303
+//         },
+//         {
+//             type: "base",
+//             price: 280000,
+//             breakfast: true,
+//             beds: [2],
+//             number: 304
+//         },
+//     ],
+//     [
+//         {
+//             type: "president",
+//             price: 920000,
+//             breakfast: true,
+//             beds: [2],
+//             number: 401
+//         },
+//         {
+//             type: "president",
+//             price: 1200000,
+//             breakfast: true,
+//             beds: [2,1,1],
+//             number: 402
+//         },
+//         {
+//             type: "president lux",
+//             price: 1520000,
+//             breakfast: true,
+//             beds: [2,2,1,1],
+//             number: 403
+//         },
+//     ]
+// ]
+// let bedsPerFloor = [] 
+// let bedsPerFloorSales = [] 
+// let discount = 30
 
-    
+// for(let floor of hotel) {
+//     let floorData = {
+//         floor: hotel.indexOf(floor) + 1,
+//         beds: 0,
+//         totalPrice: 0
+//     }
+
+//     for(let room of floor) {
+//         floorData.beds += room.beds.length
+//         floorData.totalPrice += room.price
+
+//         if (room.type === "president" || room.type === "president lux") {
+//             let discountedPrice = room.price * (1 - discount / 100);
+//             floorData.totalPrice -= room.price;
+//             floorData.totalPrice += discountedPrice; 
+//         }
+//     }
+
+//     bedsPerFloor.push(floorData)
+// }
+
+// console.log(bedsPerFloor);
+//==========================================Functions==========================================
+// function multiple(num) {
+//     return num * 2
+// }
+
+// let input = 4
+// let output = multiple(input)
+
+// console.log(output);
+
+// let listOfGrils = ["Malika", "Jasmina", "Faya", "Shaxrizoda"]
+// let listOfBoys = ["Davlat", "Ramiz", "Danya", "Asad"]
+
+// function sale(discount, price) {
+//     return price - (discount * price / 100)
+// }
+// ex
+// console.log(sale(69, 148800));
+// ====================================================
+// // Age function
+// function checkAge(age) {
+//     if (isNaN(age), age === null, age.trim() === "") {
+//         alert("Idiot");
+//     } else {
+//         age = Number(age);
+//         if (age >= 18) {
+//             alert("Welcome");
+//         } else if (age < 18) {
+//             alert("Go home");
+//         }
+//     }
+// }
+
+// let userAge = prompt("Enter your age:");
+// checkAge(userAge);
+//===================================================
+// //Name function
+// function findLongestName(name1, name2, name3) {
+//     let max_name = name1;
+
+//     if (name2.length > max_name.length) {
+//         max_name = name2;
+//     }
+
+//     if (name3.length > max_name.length) {
+//         max_name = name3;
+//     }
+
+//     return max_name;
+// }
+
+// let longestName = findLongestName('Alex', 'George', 'Michael');
+// console.log(longestName);
